@@ -10,40 +10,38 @@ In this demo, we are going to learn how to build a CI/CD pipeline for a Node.js 
 
 ## <a name="design">📐 Architecture Diagram</a>
 
+![CD:CD Pipeline](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/2c83b581-36ae-4464-ae64-3be22531cb43)
 
+## Architecture overview
 
+The architecture of the CI/CD pipeline is as follows: Users start by pushing a new commit to the GitHub repository. This triggers the pipeline, which consists of three stages: Source, Build, and Deploy. The Source stage pulls the source code from the GitHub repository. The Build stage uses AWS CodeBuild to Test the Node.js web application. The Deploy stage uses AWS CodeDeploy to deploy the Node.js web application to an Elaastic Beanstalk environment.
 
 ## <a name="steps">☑️ Steps</a>
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-* Create a VPC, Subnets, and Configure network requirements.
-* Create EC2 instances with Auto scaling group and Launch template.
-* Create a Load balancer with a target group to the Auto Scaling group.
+Step 1: Commit Application Configuration Files to GitHub Repository
 
+Step 2: Create a Instance role Elastic Beanstalk
 
-## 📝 Prerequisites
+Step 3: Configure Elastic Beanstalk Environment
 
-This tutorial assumes that you are familiar with the standard Terraform workflow. If you are new to Terraform, complete the [Get Started tutorials](https://developer.hashicorp.com/terraform/tutorials/aws-get-started) first.
+Step 4: Create a Pipeline to Deploy Node.js Application
 
-For this tutorial, you will need:
-
-* [Terraform v1.8+ installed locally](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli).
-    
-* An [AWS account](https://portal.aws.amazon.com/billing/signup) with [credentials configured for Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication).
-    
-* The [AWS CLI](https://aws.amazon.com/cli/)
 
 ##  	:octocat: Clone example repository
 
 Clone the [example repository](https://github.com/julien-muke/learn-terraform-aws-asg) for this tutorial, which contains configuration for an Auto Scaling group.
 
 ```bash
-git clone https://github.com/julien-muke/learn-terraform-aws-asg.git
+git clone https://github.com/julien-muke/aws-cicd-devops-web-app.git
 ```
 
 Change into the repository directory.
 
 ```bash
-cd learn-terraform-aws-asg
+cd aws-cicd-devops-web-app
 ```
+
+## ➡️ Step 1 - Commit Application Configuration Files to GitHub Repository
+
