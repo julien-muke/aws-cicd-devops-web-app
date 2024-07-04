@@ -10,7 +10,7 @@ In this demo, we are going to learn how to build a CI/CD pipeline for a Node.js 
 
 ## <a name="design">📐 Architecture Diagram</a>
 
-![ECS Terraform](https://github.com/julien-muke/ec2-auto-scaling-terraform/assets/110755734/7b028d20-dbbe-4228-883f-2eb9a2851095)
+
 
 
 ## <a name="steps">☑️ Steps</a>
