@@ -20,18 +20,16 @@ The architecture of the CI/CD pipeline is as follows: Users start by pushing a n
 
 The procedure for deploying this architecture on AWS consists of the following steps:
 
-Step 1: Commit Application Configuration Files to GitHub Repository
+Step 1: Create a Instance role Elastic Beanstalk
 
-Step 2: Create a Instance role Elastic Beanstalk
+Step 2: Configure Elastic Beanstalk Environment
 
-Step 3: Configure Elastic Beanstalk Environment
-
-Step 4: Create a Pipeline to Deploy Node.js Application
+Step 3: Create a Pipeline to Deploy Node.js Application
 
 
 ##  	:octocat: Clone example repository
 
-Clone the [example repository](https://github.com/julien-muke/learn-terraform-aws-asg) for this tutorial, which contains configuration for an Auto Scaling group.
+Clone the [example repository](https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git) for this tutorial, which contains configuration for an Auto Scaling group.
 
 ```bash
 git clone https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git
@@ -43,5 +41,5 @@ Change into the repository directory.
 cd aws-cicd-devops-web-app-sample
 ```
 
-## ➡️ Step 1 - Commit Application Configuration Files to GitHub Repository
+## ➡️ Step 1 - Create a Instance role Elastic Beanstalk
 
