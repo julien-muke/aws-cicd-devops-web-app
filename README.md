@@ -34,13 +34,13 @@ Step 4: Create a Pipeline to Deploy Node.js Application
 Clone the [example repository](https://github.com/julien-muke/learn-terraform-aws-asg) for this tutorial, which contains configuration for an Auto Scaling group.
 
 ```bash
-git clone https://github.com/julien-muke/aws-cicd-devops-web-app.git
+git clone https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git
 ```
 
 Change into the repository directory.
 
 ```bash
-cd aws-cicd-devops-web-app
+cd aws-cicd-devops-web-app-sample
 ```
 
 ## ➡️ Step 1 - Commit Application Configuration Files to GitHub Repository
