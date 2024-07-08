@@ -107,7 +107,7 @@ This launches the Create environment wizard. The wizard provides a set of steps 
 
 Choose one of the following, based on the values displayed in your list:
 * If `aws-elasticbeanstalk-ec2-role` displays in the dropdown list, select it from the EC2 instance profile dropdown list.
-* If another value displays in the list, and it’s the default EC2 instance profile intended for your environments, select it from the EC2 instance profile dropdown list.
+* If another value displays in the list, and it’s the default EC2 instance profile intended for your environments, select it from the EC2 instance profile dropdown list `aws-cicd-web-app-role`.
 * If the EC2 instance profile dropdown list doesn't list any values to choose from, expand the procedure that follows, Create IAM Role for EC2 instance profile.
 
 ![Screenshot 2024-07-08 at 11 55 14](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/29e489af-d737-4501-b6c9-2b8ab10c5b7e)
