@@ -110,5 +110,15 @@ Choose one of the following, based on the values displayed in your list:
 * If another value displays in the list, and it’s the default EC2 instance profile intended for your environments, select it from the EC2 instance profile dropdown list `aws-cicd-web-app-role`.
 * If the EC2 instance profile dropdown list doesn't list any values to choose from, expand the procedure that follows, Create IAM Role for EC2 instance profile.
 
+11. Choose Next.
+12. Review configuration then choose Next.
+
 ![Screenshot 2024-07-08 at 11 55 14](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/29e489af-d737-4501-b6c9-2b8ab10c5b7e)
 
+13. The Elastic Beanstalk Environment will take few munites to launch.
+14. Once the environment is successfully launched, click on the URL Domain to test the application.
+
+![Screenshot 2024-07-08 at 12 05 44](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/e0de67eb-0a0d-4a70-b9b1-c601be0f85ca)
+
+
+![Screenshot 2024-07-08 at 12 07 22](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/f782c6c2-bb2d-4b6f-8587-2519370ce0f0)
