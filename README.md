@@ -29,7 +29,7 @@ Step 3: Create a Pipeline to Deploy Node.js Application
 
 ##  	:octocat: Clone example repository
 
-Clone the [example repository](https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git) for this tutorial, which contains configuration for an Auto Scaling group.
+Clone the [example repository](https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git) for this tutorial, which contains the Node.js Application.
 
 ```bash
 git clone https://github.com/julien-muke/aws-cicd-devops-web-app-sample.git
@@ -42,4 +42,30 @@ cd aws-cicd-devops-web-app-sample
 ```
 
 ## ➡️ Step 1 - Create a Instance role Elastic Beanstalk
+
+An instance profile is a container for an AWS Identity and Access Management (IAM) role that you can use to pass role information to an Amazon EC2 instance when the instance starts.
+
+If your AWS account doesn’t have an EC2 instance profile, you must create one using the IAM service. You can then assign the EC2 instance profile to new environments that you create. The Create environment wizard provides information to guide you through the IAM service, so that you can create an EC2 instance profile with the required permissions. After creating the instance profile, you can return to the console to select it as the EC2 instance profile and continue the steps to create your environment.
+
+To create an instance profile:
+
+1. Open the [Roles](https://console.aws.amazon.com/iam/home#roles) page in the IAM console.
+2. Choose Create role.
+
+![1](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/369f4232-4220-4adc-931e-53ab3c939524)
+
+
+3. Under Trusted entity type, choose AWS service.
+4. Under Use case, choose EC2.
+5. Choose Next.
+
+![2](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/fa9def89-ae17-4055-a1fd-9155519702f3)
+
+
+6. Attach the appropriate managed policies provided by Elastic Beanstalk and any additional policies that provide permissions that your application needs.
+7. Choose Next.
+8. Enter a name for the role.
+9. Choose Create role.
+
+![4](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/589744dc-3fed-4796-aa45-c09edfe77e71)
 
