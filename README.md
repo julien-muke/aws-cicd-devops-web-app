@@ -22,7 +22,7 @@ The procedure for deploying this architecture on AWS consists of the following s
 
 Step 1: Create a Instance role Elastic Beanstalk
 
-Step 2: Configure Elastic Beanstalk Environment
+Step 2: Creating an Elastic Beanstalk environment
 
 Step 3: Create a Pipeline to Deploy Node.js Application
 
@@ -69,3 +69,37 @@ To create an instance profile:
 
 ![4](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/589744dc-3fed-4796-aa45-c09edfe77e71)
 
+
+## ➡️ Step 1 - Creating an Elastic Beanstalk environment
+
+An AWS Elastic Beanstalk environment is a collection of AWS resources running an application version. You can deploy multiple environments when you need to run multiple versions of an application. For example, you might have development, integration, and production environments.
+
+To launch an environment with a sample application (console):
+
+1. Open the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk), and in the Regions list, select your AWS Region.
+2. In the navigation pane, choose Applications, and then choose create application.
+
+![Screenshot 2024-07-08 at 11 51 35](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/bae0b96a-52c4-4270-9153-90848dec5fcb)
+
+
+3. On the application overview page, choose Create new environment.
+
+![Screenshot 2024-07-08 at 11 52 01](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/dc8e3bb8-97ed-48bc-96ea-cd71018a712b)
+
+This launches the Create environment wizard. The wizard provides a set of steps for you to create a new environment.
+
+4. For environment tier, choose the Web server environment.
+
+![Configure-environment-Elastic-Beanstalk-us-east-1](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/1dc57ce3-008b-4988-ad20-1b195645096d)
+
+
+5. For Platform, select the platform and platform branch that match the language your application uses, in my case it's `Node.js`
+6. For Application code, choose Sample application.
+7. For Configuration presets, choose Single instance.
+8. Choose Next.
+
+
+![Configure-environment-Elastic-Beanstalk-us-east-1 copy](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/af4124ec-fd7e-448a-890c-917f63d68bb2)
+
+
+9. Choose Use an existing service role for Service Role.
