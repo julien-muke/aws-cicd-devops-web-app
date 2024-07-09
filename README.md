@@ -245,7 +245,7 @@ Note: If You are not changing the BuildArtifact to SourceArtifact, you’ll run 
 
 Now, let's trigger the Pipeline by making a Changes in Respository.
 
-1. For example, i'll open GitHub Respository, and edit the title by adding `in 2024` at the end of the title.
+1. For example, i'll open GitHub Respository, open `index.html` and edit the title by adding `in 2024` at the end of the title.
 2. Then click Commit changes.
 
 ![Screenshot 2024-07-08 at 14 52 57](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/c703b944-4f0c-4c9e-ae8b-b1f427cd5109)
