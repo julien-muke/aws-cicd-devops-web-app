@@ -262,6 +262,16 @@ Once the deployment is successful, you can view the application by navigating to
 ![Screenshot 2024-07-08 at 15 09 13](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/33697a89-4fd5-4225-b3a4-7762ce25e81b)
 
 
+## Conclusion
+
+Building a CI/CD pipeline for a Node.js web application using AWS CI/CD services is a robust approach to streamline and automate the software development process. By leveraging tools such as AWS CodePipeline, AWS CodeBuild, and AWS CodeDeploy, you can ensure continuous integration and continuous delivery, enhancing the efficiency, reliability, and scalability of your application deployments. 
+
+This pipeline not only accelerates the development cycle but also minimizes manual intervention, reduces the risk of human error, and facilitates consistent, repeatable processes. Ultimately, integrating these AWS services into your CI/CD pipeline empowers your development team to deliver high-quality software faster and with greater confidence, paving the way for continuous innovation and improvement.
+
+
+## 💰 Cost
+
+All services used are eligible for the AWS Free Tier. However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
 
 
 
