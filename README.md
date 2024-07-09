@@ -171,8 +171,36 @@ save this connection.
 
 
 * Choose again a repository in your GitHub Account, then choose `main` as default branch
+* Enter `main` branch to trigger the pipeline, then choose Next.
 
 ![Create-new-pipeline-CodePipeline-us-east-1(6)](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/6895bea7-3346-481b-aec5-6cbc0c20883f)
 
 
+7. On the Add build stage page, From Build provider, choose a custom action provider of build services, and provide the configuration details for that provider, choose `AWS CodeBuild`
+
+8. In Project name, choose your build project. If you have already created a build project in CodeBuild, choose it. Or you can create a build project in CodeBuild and then return to this task. Follow the instructions in Create a Pipeline That Uses CodeBuild in the CodeBuild User Guide.
+
+* Choose Create project
+
+![Screenshot 2024-07-08 at 13 17 46](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/64568078-a3ce-4a66-a790-c2c43d8188ca)
+
+
+* Enter the Project name `devops-web-app`
+
+![Screenshot 2024-07-08 at 13 19 05](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/f78d5c46-7f5a-4f93-aa70-d43e4d72113d)
+
+
+* Under Build specifications, choose Use a buildspec file to Store build commands in a YAML-formatted buildspec file.
+
+![Screenshot 2024-07-08 at 13 20 01](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/6a05ce71-bd22-43d9-9291-b924ee276050)
+
+
+* Scroll down and Choose Continue to CodePipeline.
+
+* Once the is created, go back to the build page, and choose Next.
+
+9. On the Add deploy stage page, In Deploy provider, choose a custom action that you have created for a deployment provider which is `AWS Elastic Beanstalk`
+
+10. In Application name, enter or choose the name of an existing Elastic Beanstalk application `My-First-App`
+11. n Environment name, enter an environment for the application `My-First-App-env`. Choose Next.
 
