@@ -170,6 +170,9 @@ save this connection.
 ![Screenshot 2024-07-08 at 13 11 38](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/b54dc28e-65c5-4fa8-b250-5e4531f69b01)
 
 
+* Choose again a repository in your GitHub Account, then choose `main` as default branch
+
+![Create-new-pipeline-CodePipeline-us-east-1(6)](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/6895bea7-3346-481b-aec5-6cbc0c20883f)
 
 
 
