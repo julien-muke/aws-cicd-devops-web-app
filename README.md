@@ -251,7 +251,17 @@ Now, let's trigger the Pipeline by making a Changes in Respository.
 ![Screenshot 2024-07-08 at 14 52 57](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/c703b944-4f0c-4c9e-ae8b-b1f427cd5109)
 
 
-3. 
+As you can see below the CI/CD CodePipeline, went through the Source > Build > Deploy stage successfully.
+
+
+![devops-web-app-pipeline-CodePipeline-us-east-1](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/8a3e34b5-47b7-4763-9cce-2266732c3274)
+
+
+Once the deployment is successful, you can view the application by navigating to the Elastic Beanstalk environment URL as shown below.
+
+![Screenshot 2024-07-08 at 15 09 13](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/33697a89-4fd5-4225-b3a4-7762ce25e81b)
+
+
 
 
 
