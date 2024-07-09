@@ -216,3 +216,42 @@ Note: The Pipeline will be triggered automatically. But we need to modify one se
 Artifacts are the files that are worked on by actions in the pipeline. See the action configuration for each action for details about artifact parameters. For example, the S3 source action artifact is a file name (or file path), and the files are generally provided as a ZIP file.
 
 
+13. Let's edit the pipiline, in the codePipeline console, click Edit
+
+![Screenshot 2024-07-08 at 14 28 01](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/6f7765d7-aa63-4e67-bdca-316dd225af84)
+
+
+14. Scroll down to Edit: Deploy and choose Edit stage.
+
+![Screenshot 2024-07-08 at 14 28 16](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/e9f4851e-af86-4b20-aef9-42cd68e295ed)
+
+
+15. Click on the edit icon
+
+![Screenshot 2024-07-08 at 14 28 24](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/f61aeeca-f6b0-49fb-9faf-97966c0c9d21)
+
+
+16. Under Input artifacts, choose `SourceArtifacts`
+
+![Screenshot 2024-07-08 at 14 28 36](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/5f8e2b90-5aea-4bfd-a9d1-48dc6a4b9242)
+
+
+17. Back to CodePipeline console, choose Save
+
+
+![Screenshot 2024-07-08 at 14 29 00](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/210e933c-48d8-4294-864b-ae2bd668a3e3)
+
+Note: If You are not changing the BuildArtifact to SourceArtifact, you’ll run into some errors, make sure to edit the input artifacts to SourceArtifact as shown above.
+
+Now, let's trigger the Pipeline by making a Changes in Respository.
+
+1. For example, i'll open GitHub Respository, and edit the title by adding 2024 at the end of the title.
+2. Then click Commit changes.
+
+![Screenshot 2024-07-08 at 14 52 57](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/c703b944-4f0c-4c9e-ae8b-b1f427cd5109)
+
+
+3. 
+
+
+
