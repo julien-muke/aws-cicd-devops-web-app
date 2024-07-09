@@ -150,8 +150,26 @@ To create a pipeline in the console:
 
 7. Add source stage page, in Source provider, choose the type of repository where your source code is stored, specify its required options, in my case i will choose GitHub (Version 2).
 
-Under Connection, choose an existing connection or create a new one. To create or manage a connection for your GitHub source action, see [GitHub connections](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html). 
+* Under Connection, choose an existing connection or create a new one. To create or manage a connection for your GitHub source action, see [GitHub connections](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html). 
 
 ![Screenshot 2024-07-08 at 13 07 23](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/7ba93582-d6ef-4a65-a1ee-80cba63506ab)
+
+* Choose the repository you want to use as the source location for your pipeline. 
+
+![Screenshot 2024-07-08 at 13 08 40](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/bc420b03-868d-4df9-ae16-95ac676972c1)
+
+
+* GitHub Apps create a link for your connection with GitHub. To start, install a new app and
+save this connection.
+
+![Screenshot 2024-07-08 at 13 09 36](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/7aea793a-1464-461a-9e22-b81a4864133f)
+
+
+* Select your GitHub repository `julien-muke/aws-cicd-devops-web-app-sample`
+
+![Screenshot 2024-07-08 at 13 11 38](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/b54dc28e-65c5-4fa8-b250-5e4531f69b01)
+
+
+
 
 
