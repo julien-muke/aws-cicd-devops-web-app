@@ -204,3 +204,15 @@ save this connection.
 10. In Application name, enter or choose the name of an existing Elastic Beanstalk application `My-First-App`
 11. n Environment name, enter an environment for the application `My-First-App-env`. Choose Next.
 
+
+![Screenshot 2024-07-08 at 14 25 05](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/a81c01fa-4635-46c7-a205-4313474e50e6)
+
+
+12. Review page, review your pipeline configuration, and then choose Create pipeline.
+
+
+Note: The Pipeline will be triggered automatically. But we need to modify one setting to run the Pipeline Successfully. Since we are not building any Binaries or Docker Images, we are not using BuildArtifacts Option. So we also need to update that setting in Deploy Stage.
+
+Artifacts are the files that are worked on by actions in the pipeline. See the action configuration for each action for details about artifact parameters. For example, the S3 source action artifact is a file name (or file path), and the files are generally provided as a ZIP file.
+
+
