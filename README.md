@@ -70,14 +70,14 @@ To create an instance profile:
 ![4](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/589744dc-3fed-4796-aa45-c09edfe77e71)
 
 
-## ➡️ Step 1 - Creating an Elastic Beanstalk environment
+## ➡️ Step 2 - Creating an Elastic Beanstalk environment
 
 An AWS Elastic Beanstalk environment is a collection of AWS resources running an application version. You can deploy multiple environments when you need to run multiple versions of an application. For example, you might have development, integration, and production environments.
 
 To launch an environment with a sample application (console):
 
 1. Open the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk), and in the Regions list, select your AWS Region.
-2. In the navigation pane, choose Applications, and then choose create application.
+2. In the navigation pane, choose Applications, and then choose create application, name your app `My-First-App`.
 
 ![Screenshot 2024-07-08 at 11 51 35](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/bae0b96a-52c4-4270-9153-90848dec5fcb)
 
@@ -122,3 +122,36 @@ Choose one of the following, based on the values displayed in your list:
 
 
 ![Screenshot 2024-07-08 at 12 07 22](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/f782c6c2-bb2d-4b6f-8587-2519370ce0f0)
+
+
+## ➡️ Step 3 - Create a Pipeline to Deploy Node.js Application
+
+
+To create a pipeline in the console, you must provide the source file location and information about the providers you will use for your actions.
+
+We will create a pipeline to deploy the Node.js web application to an Elastic Beanstalk environment. We will use AWS CodePipeline to create a pipeline that automates the deployment process.
+
+To create a pipeline in the console:
+
+1. Open the CodePipeline console at http://console.aws.amazon.com/codesuite/codepipeline/home.
+2. On the Welcome page, choose Create pipeline. 
+
+
+![Screenshot 2024-07-08 at 12 52 40](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/09598a4d-e20a-4813-b209-6805a72e17e8)
+
+
+3. Choose pipeline settings page, in Pipeline name, enter the name for your pipeline `devops-web-app-pipeline`
+4. In Execution mode, choose Queued (Pipeline type V2 required)
+5. In Service role, Choose New service role to allow CodePipeline to create a new service role in IAM.
+6. Choose Next.
+
+![Create-new-pipeline-CodePipeline-us-east-1(5)](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/fdaa5179-5a25-436e-bdcb-32ec5b9c1313)
+
+
+7. Add source stage page, in Source provider, choose the type of repository where your source code is stored, specify its required options, in my case i will choose GitHub (Version 2).
+
+Under Connection, choose an existing connection or create a new one. To create or manage a connection for your GitHub source action, see [GitHub connections](https://docs.aws.amazon.com/codepipeline/latest/userguide/connections-github.html). 
+
+![Screenshot 2024-07-08 at 13 07 23](https://github.com/julien-muke/aws-cicd-devops-web-app/assets/110755734/7ba93582-d6ef-4a65-a1ee-80cba63506ab)
+
+
